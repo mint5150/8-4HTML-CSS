@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*common*/
-body {
+body,ul,p {
   margin: 0;
   padding: 0;
 }
@@ -8,6 +8,7 @@ body {
 header, main, footer {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /*header*/
@@ -15,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
+  height:75px;
 }
 
 .header-logo {
@@ -24,14 +26,11 @@ header {
   font-size: 24px;
 }
 
-.header-right {
-
-}
-
 .header-right__list {
   list-style-type: none;
   display: flex;
   font-size: 14px;
+  line-height: 55px;
 }
 
 .header-right__item {
@@ -54,7 +53,7 @@ header {
 
 /*about*/
 .about {
-  padding: 50px 0px 80px 0px;
+  padding: 80px 0px;
 }
 
 .about-title {
@@ -62,12 +61,13 @@ header {
   font-size: 32px;
   border-bottom: solid 1px #000;
   width: 100px;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 .about-content {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .about-img {
@@ -80,12 +80,12 @@ header {
 
 .about-text__title {
   font-weight: bold;
-  margin: 5px;
+  padding: 5px;
 }
 
 .about-text__desc {
   font-size: 14px;
-  margin: 5px;
+  padding: 5px;
 }
 
 /*bicycle*/
@@ -98,7 +98,7 @@ header {
   font-size: 32px;
   border-bottom: solid 1px #000;
   width: 100px;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .bicycle-boxs {
@@ -109,7 +109,15 @@ header {
 }
 
 .bicycle-box__item {
-  margin: 10px;
+  margin-right: 10px;
+}
+
+.bicycle-box__item img {
+  width: 100%;
+}
+
+.bicycle-box__item:last-child {
+  margin-right: 0px;
 }
 
 .bycycle-box__item__title {
@@ -119,7 +127,7 @@ header {
 
 /*footer*/
 footer {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -130,9 +138,6 @@ small {
 }
 
 @media screen and (max-width: 600px) {
-  .keyvisual img{
-    width: auto;
-  }
 
   .about-content {
     display: block;
@@ -141,14 +146,28 @@ small {
 
   .about-img {
     margin: 0 auto;
+    margin-top: 50px;
   }
 
 
   .bicycle-boxs {
     display: block;
   }
-}
 
-.bicycle-box__item img {
-  width: 100%;
+  .bicycle-box__item {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  
+  .bicycle-box__item img {
+    width: 100%;
+  }
+  
+  .bycycle-box__item__title {
+    margin-top: 10px;
+  }
+  
+  .bycycle-box__item__text {
+    margin-top: 10px;
+  }
 }

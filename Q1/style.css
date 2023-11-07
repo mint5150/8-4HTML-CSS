@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*common*/
-body,ul,p {
-  margin: 0;
-  padding: 0;
-}
 
 header, main, footer {
   max-width: 900px;
@@ -20,6 +15,10 @@ header {
 }
 
 .header-logo {
+  line-height: 75px;
+}
+
+.header-logo a {
   background-color: #333;
   color: #fff;
   padding: 3px 15px;
@@ -62,6 +61,7 @@ header {
   border-bottom: solid 1px #000;
   width: 100px;
   margin: 0px auto;
+  font-weight: bold;
 }
 
 .about-content {
@@ -78,6 +78,10 @@ header {
   margin-right: 30px;
 }
 
+.about-text {
+  width: 350px;
+}
+
 .about-text__title {
   font-weight: bold;
   padding: 5px;
@@ -86,6 +90,7 @@ header {
 .about-text__desc {
   font-size: 14px;
   padding: 5px;
+  line-height: 20px;
 }
 
 /*bicycle*/
@@ -99,6 +104,7 @@ header {
   border-bottom: solid 1px #000;
   width: 100px;
   margin: 0px auto;
+  font-weight: bold;
 }
 
 .bicycle-boxs {
@@ -123,6 +129,11 @@ header {
 .bycycle-box__item__title {
   font-weight: bold;
   font-size: 18px;
+  margin-top: 15px
+}
+
+.bycycle-box__item__text {
+  margin-top: 15px
 }
 
 /*footer*/

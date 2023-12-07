@@ -6,6 +6,7 @@ body {
 .keyvisual {
   background-image: url("https://placehold.jp/2000x1250.png");
   background-position: center;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -54,71 +55,39 @@ body {
   justify-content: space-between;
 }
 
-.downbox-left {
+.downbox-left,.downbox-right {
   position: relative;
   text-align: center;
 }
 
-.downbox-left_container {
+.downbox-left_container,.downbox-right_container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
-  height: 100px;
   background: rgba(0, 0, 0, 0.6);
-
 }
 
-.downbox-left_container h3 {
+.downbox-left_container h3,.downbox-right_container h3 {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
-.downbox-left_container p {
+.downbox-left_container p,.downbox-right_container p {
   font-size: 0.9rem;
   color: white;
   width: 90%;
   margin: 0 auto;
-  margin-top: 10px;
-}
-
-.downbox-right {
-  position: relative;
-  text-align: center;
-}
-
-.downbox-right_container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 100px;
-  background: rgba(0, 0, 0, 0.6);
-
-}
-
-.downbox-right_container h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
-  margin-top: 15px;
-}
-
-.downbox-right_container p {
-  font-size: 0.9rem;
-  color: white;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 10px;
+  padding: 15px 0;
 }
 
 .fashion {
   background-image: url("https://placehold.jp/2000x500.png");
   background-position: center;
+  padding: 50px 0;
 }
 
 .fasion-box {
@@ -126,7 +95,6 @@ body {
   margin: 0 auto;
   height: 500px;
   text-align: center;
-  padding: 50px 0;
 }
 
 .fasion-box h2 {
@@ -178,7 +146,7 @@ body {
 .catalog-right h3 {
   font-size: 1.4rem;
   font-weight: bold;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .catalog-right p {
@@ -220,7 +188,7 @@ body {
 .antique-right h3 {
   font-size: 1.4rem;
   font-weight: bold;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .antique-right p {
@@ -404,7 +372,7 @@ footer {
 
   .nav-center {
     margin-top: 50px;
-    margin-left: 40px;
+    padding-left: 40px;
   }
 
   .nav-right {

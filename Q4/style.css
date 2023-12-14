@@ -60,28 +60,28 @@ body {
   text-align: center;
 }
 
-.downbox-left_container,.downbox-right_container {
+.downbox-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
   background: rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
 }
 
-.downbox-left_container h3,.downbox-right_container h3 {
+.downbox-container h3 {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  padding-top: 15px;
 }
 
-.downbox-left_container p,.downbox-right_container p {
+.downbox-container p {
   font-size: 0.9rem;
   color: white;
   width: 90%;
   margin: 0 auto;
-  padding: 15px 0;
+  margin-top: 15px;
 }
 
 .fashion {
